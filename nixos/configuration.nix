@@ -30,7 +30,6 @@
   # services.xserver.desktopManager.budgie.enable = true;
   # services.xserver.displayManager.lightdm.enable = true;
 
-  services.printing.enable = true;
 
   system.stateVersion = "25.11";
 

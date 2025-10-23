@@ -8,8 +8,8 @@
     ./modules/kitty/kitty.nix
   ];
 
-  home.username = "f1rtxz";
-  home.homeDirectory = "/home/f1rtxz";
+  home.username = "antonh";
+  home.homeDirectory = "/home/antonh";
   home.stateVersion = "25.11";
   programs.home-manager.enable = true;
 

@@ -9,5 +9,6 @@
     ./openrazer.nix
     ./nvidia.nix
     ./garbage-collector.nix
+    ./printing.nix
   ];
 }

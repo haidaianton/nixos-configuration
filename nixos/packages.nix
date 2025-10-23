@@ -1,5 +1,8 @@
 { inputs, pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-35.7.5"
+  ];
 
   programs.firefox.enable = true;
   programs.steam.enable = true;
@@ -45,6 +48,7 @@
     kdePackages.kdenlive
     libreoffice-qt6-fresh
     cool-retro-term
-    inputs.ayugram-desktop.packages.${pkgs.system}.ayugram-desktop
+    appeditor
+#    inputs.ayugram-desktop.packages.${pkgs.system}.ayugram-desktop
   ];
 }

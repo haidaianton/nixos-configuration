@@ -14,11 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ayugram-desktop = {
-      type = "git";
-      submodules = true;
-      url = "https://github.com/ndfined-crp/ayugram-desktop/";
-    };
+#    ayugram-desktop = {
+#      type = "git";
+#      submodules = true;
+#      url = "https://github.com/ndfined-crp/ayugram-desktop/";
+#    };
 
     kwin-effects-forceblur = {
       url = "github:taj-ny/kwin-effects-forceblur";
@@ -30,7 +30,7 @@
   let
     system = "x86_64-linux";
     hostname = "nixos";
-    user = "haidai";
+    user = "antonh";
   in {
 
     nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
