@@ -4,7 +4,12 @@
     "electron-35.7.5"
   ];
 
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+    package = pkgs.firefox;
+    nativeMessagingHosts.packages = [ pkgs.firefoxpwa ];
+  };
+
   programs.steam.enable = true;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
@@ -40,7 +45,7 @@
     pavucontrol
     zoom-us
     mesa-demos
-    gfn-electron
+    # gfn-electron
     mangohud
     davinci-resolve
     ffmpeg
@@ -49,6 +54,10 @@
     libreoffice-qt6-fresh
     cool-retro-term
     appeditor
+    firefoxpwa
+    google-chrome
+    wineWowPackages.stable
+    openrgb-with-all-plugins
 #    inputs.ayugram-desktop.packages.${pkgs.system}.ayugram-desktop
   ];
 }

@@ -3,4 +3,9 @@
   services.printing.drivers = with pkgs; [
     hplipWithPlugin
   ];
+
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+  };
 }

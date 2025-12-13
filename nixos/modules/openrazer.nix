@@ -1,4 +1,4 @@
 {
   hardware.openrazer.enable = true;
-  hardware.openrazer.users = ["f1rtxz"];
+  hardware.openrazer.users = ["antonh"];
 }

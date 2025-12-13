@@ -30,7 +30,8 @@
   # services.xserver.desktopManager.budgie.enable = true;
   # services.xserver.displayManager.lightdm.enable = true;
 
+  services.hardware.openrgb.enable = true;  
 
-  system.stateVersion = "25.11";
+  system.stateVersion = "26.05";
 
 }
