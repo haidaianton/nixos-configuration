@@ -11,6 +11,9 @@
       foldmethod = "manual";
       foldenable = true;
 
+      foldlevel = 99;
+      foldlevelstart = 99;
+
       tabstop = 2;
       shiftwidth = 2;
       expandtab = true;

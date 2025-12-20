@@ -34,7 +34,8 @@
   in {
 
     nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit system; inherit inputs; };
+      inherit system;
+      specialArgs = { inherit inputs; };
       modules = [
         ./nixos/configuration.nix
       ];

@@ -26,6 +26,7 @@
     prettier
     black
     nixpkgs-fmt
+    cmatrix
   ];
 }
 

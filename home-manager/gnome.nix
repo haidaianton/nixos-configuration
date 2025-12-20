@@ -9,7 +9,6 @@
       { package = pkgs.gnomeExtensions.dash2dock-lite; }
       { package = pkgs.gnomeExtensions.appindicator; }
       { package = pkgs.gnomeExtensions.coverflow-alt-tab; }
-      { package = pkgs.gnomeExtensions.desktop-icons-ng-ding; }
       { package = pkgs.gnomeExtensions.user-themes; }
       { package = pkgs.gnomeExtensions.vitals; }
       { package = pkgs.gnomeExtensions.blur-my-shell; }
