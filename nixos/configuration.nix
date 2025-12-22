@@ -5,7 +5,7 @@
     [
       ./hardware-configuration.nix
       ./packages.nix
-      ./modules/bundle.nix
+      ./modules
     ];
 
   boot.kernelPackages = pkgs.linuxPackages_zen;

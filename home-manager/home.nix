@@ -2,10 +2,7 @@
 
 {
   imports = [
-    ./zsh.nix
-    ./gnome.nix
-    ./modules/nixvim/nixvim.nix
-    ./modules/kitty/kitty.nix
+    ./modules
   ];
 
   home.username = "antonh";
