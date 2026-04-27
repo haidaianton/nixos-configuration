@@ -15,13 +15,12 @@
       background_opacity = "0.8";
       background_blur = 32;
 
-      wayland_titlebar_color = "background";
-
       # --- Terminal bell ---
       enable_audio_bell = "no";
 
       # --- OS specific tweaks ---
       linux_display_server = "wayland";
+      wayland_titlebar_color = "background";
 
       # --- Cursor customization ---
       cursor_shape = "block";
@@ -83,7 +82,6 @@
     '';
   };
 
-  # Копіюємо файл теми у ~/.config/kitty/
   xdg.configFile."kitty/theme.conf".source = ./themes/GruvBox_DarkHard.conf;
 }
 
