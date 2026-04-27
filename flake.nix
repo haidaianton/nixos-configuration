@@ -11,17 +11,10 @@
 
     nixvim = {
       url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+      inputs.nixpkgs.follows = "nixpkgs"; };
 
-#    ayugram-desktop = {
-#      type = "git";
-#      submodules = true;
-#      url = "https://github.com/ndfined-crp/ayugram-desktop/";
-#    };
-
-    kwin-effects-forceblur = {
-      url = "github:taj-ny/kwin-effects-forceblur";
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -31,6 +24,11 @@
     system = "x86_64-linux";
     hostname = "nixos";
     user = "antonh";
+
+    mkPkgs = system: import nixpkgs {
+      inherit system;
+      config.allowUnfree = true;
+    };
   in {
 
     nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
@@ -42,7 +40,12 @@
     };
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = mkPkgs system;
+
+      extraSpecialArgs = {
+        inherit inputs;
+      };
+
       modules = [
         ./home-manager/home.nix
 	      inputs.nixvim.homeModules.nixvim

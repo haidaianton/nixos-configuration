@@ -16,8 +16,12 @@
   programs.direnv.enable = true;
   # programs.kdeconnect.enable = true;
 
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
   services.flatpak.enable = true;
-
+  
   environment.systemPackages = with pkgs; [
     neovim
     wget
@@ -29,7 +33,7 @@
     gcc
     python3
     protonup-qt
-    bottles
+    # bottles
     gnome-tweaks
     telegram-desktop
     viber
@@ -41,23 +45,42 @@
     meson
     ninja
     sdl3
-    inputs.kwin-effects-forceblur.packages.${pkgs.system}.default
     pavucontrol
     zoom-us
     mesa-demos
-    # gfn-electron
     mangohud
-    davinci-resolve
+    # davinci-resolve
     ffmpeg
     vlc
-    kdePackages.kdenlive
+    # kdePackages.kdenlive
     libreoffice-qt6-fresh
     cool-retro-term
     appeditor
     firefoxpwa
-    google-chrome
-    wineWowPackages.stable
+    wineWow64Packages.stable
     openrgb-with-all-plugins
-#    inputs.ayugram-desktop.packages.${pkgs.system}.ayugram-desktop
+    whatsapp-electron
+    shaderc
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    sassc
+    ayugram-desktop
+    linux-wallpaperengine
+    
+    # Gnome Extensions
+    gnomeExtensions.gsconnect
+    gnomeExtensions.burn-my-windows
+    gnomeExtensions.dash2dock-lite
+    gnomeExtensions.appindicator
+    gnomeExtensions.coverflow-alt-tab
+    gnomeExtensions.user-themes
+    gnomeExtensions.vitals
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.caffeine
+    gnomeExtensions.compiz-windows-effect
+    gnomeExtensions.compiz-alike-magic-lamp-effect
+    gnomeExtensions.clipboard-indicator
+    gnomeExtensions.search-light
+    gnomeExtensions.color-picker
+    gnomeExtensions.desktop-icons-ng-ding
   ];
 }
