@@ -65,6 +65,7 @@
     sassc
     ayugram-desktop
     linux-wallpaperengine
+    conky
     
     # Gnome Extensions
     gnomeExtensions.gsconnect
@@ -82,5 +83,11 @@
     gnomeExtensions.search-light
     gnomeExtensions.color-picker
     gnomeExtensions.desktop-icons-ng-ding
+    gnomeExtensions.desktop-widgets
+  ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.sauce-code-pro
+    nerd-fonts.jetbrains-mono
   ];
 }
