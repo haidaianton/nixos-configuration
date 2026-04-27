@@ -58,8 +58,6 @@
     keybindings = {
       # Font size management
       "ctrl+shift+backspace" = "change_font_size all 0";
-      # Maximize
-      "ctrl+shift+f" = "toggle_maximized";
       # Window management
       "ctrl+shift+enter" = "new_window";
       "ctrl+shift+]" = "next_window";
