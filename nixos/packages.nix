@@ -11,6 +11,7 @@
   };
 
   programs.steam.enable = true;
+  programs.niri.enable = true;
   programs.gamemode.enable = true;
   programs.zsh.enable = true;
   programs.direnv.enable = true;
@@ -23,6 +24,8 @@
   services.flatpak.enable = true;
   
   environment.systemPackages = with pkgs; [
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    xwayland-satellite
     neovim
     wget
     home-manager

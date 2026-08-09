@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-    users.users.antonh = {
+    users.users.wlinja = {
     isNormalUser = true;
     description = "Anton Haidai";
     extraGroups = [ "networkmanager" "wheel" "plugdev" "openrazer" "input" "audio" ];

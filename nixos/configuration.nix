@@ -8,7 +8,7 @@
       ./modules
     ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -32,5 +32,5 @@
 
   services.hardware.openrgb.enable = true;  
 
-  system.stateVersion = "26.05";
+  system.stateVersion = "26.11";
 }

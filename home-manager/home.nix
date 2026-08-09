@@ -5,8 +5,8 @@
     ./modules
   ];
 
-  home.username = "antonh";
-  home.homeDirectory = "/home/antonh";
+  home.username = "wlinja";
+  home.homeDirectory = "/home/wlinja";
   home.stateVersion = "26.05";
   programs.home-manager.enable = true;
 
